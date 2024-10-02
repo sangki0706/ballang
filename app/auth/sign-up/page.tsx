@@ -2,7 +2,7 @@
 
 import { SignUp } from '@/api/auth.api';
 import Header from '@/app/_components/Header'
-import { signupData } from '@/schema/auth.schema';
+import { signUpPage } from '@/schema/auth.schema';
 import { useRouter } from 'next/navigation';
 import React, { ComponentProps, useRef } from 'react'
 
@@ -32,7 +32,7 @@ function SignUpPage() {
     if(!email.includes("@") && !email.includes(".")) return alert("비밀번호 양식이 맞지 않습니다");
     if(password !== passwordConfirm)return alert("비밀번호와 비밀번호 확인이 일치하지 않습니다");
 
-    const data:signupData = {email, password};
+    const data:signUpPage = {email, password};
 
     await SignUp(data);
 

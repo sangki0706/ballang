@@ -1,4 +1,4 @@
-export type signupData = {
+export type signUpPage = {
     email: string;
     password: string;
 }

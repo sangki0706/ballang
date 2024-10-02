@@ -10,3 +10,4 @@ export interface Product {
     originalPrice: number;   // 원래 가격
     imgSrc: string;          // 이미지 URL
 }
+
