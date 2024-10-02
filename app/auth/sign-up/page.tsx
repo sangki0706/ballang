@@ -51,7 +51,7 @@ function SignUpPage() {
       <Header />
 
       <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center min-h-screen">
-        <h2 className="font-bold text-3xl">회원가입</h2>
+        <h2 className="font-bold text-3xl mb-4">회원가입</h2>
 
         <label htmlFor="email" className='mb-2 text-left text-sm font-medium text-gray-700'>이메일</label>
         <input ref={emailInput} id='email' type="email" className='border border-black h-10 w-96 '  />
